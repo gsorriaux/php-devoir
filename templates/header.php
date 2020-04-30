@@ -6,6 +6,7 @@
 <html lang="fr" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="../css/style.css">
         <title>Mes livres SF</title>
     </head>

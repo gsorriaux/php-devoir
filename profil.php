@@ -3,13 +3,13 @@
     <main>
         <?php if(!empty($_SESSION['name'])): ?>
             <div class="profil">
-                <h1>Bienvenue <?= $_SESSION['name']?> sur votre page Profil.</h1>
+                <h1>Bienvenue <?= ucfirst($_SESSION['name'])?> sur votre page Profil.</h1>
                 <div class="infoProfil">
                     <div class="nameProfil">
                         <img src="/images/profil.jpg" alt="ma photo">
                         <div class="name">
-                            <p>Numéro 5</p>
                             <p>Johnny</p>
+                            <p>Numéro 5</p>
                         </div>
                     </div>
                     <div class="status">
@@ -26,22 +26,22 @@
                         <label for="genre">Oui</label>
                         <input type="radio" name="genre" value="yes" checked>
                         <label for="genre">Non</label>
-                        <input type="radio" name="genre" value="no">
+                        <input type="radio" name="genre" value="no" <?php if($_SESSION['genre'] == "no"):?> checked <?php endif ?>>
                     </div>
                     <div class="formLine">
                         <label for="annee">Afficher l'année de parution :</label>
                         <label for="annee">Oui</label>
                         <input type="radio" name="annee" value="yes" checked>
                         <label for="annee">Non</label>
-                        <input type="radio" name="annee" value="no">
+                        <input type="radio" name="annee" value="no" <?php if($_SESSION['annee'] == "no"):?> checked <?php endif ?>>
                     </div>
                     <div class="formLine">
                         <label for="age">Afficher la cible :</label>
                         <label for="cible">Oui</label>
                         <input type="radio" name="cible" value="yes" checked>
                         <label for="cible">Non</label>
-                        <input type="radio" name="cible" value="no">
-                    </div>                                
+                        <input type="radio" name="cible" value="no" <?php if($_SESSION['cible'] == "no"):?> checked <?php endif ?>>
+                    </div>
                     <input type="submit"value="Sauvegarder">
                 </form>
             </div>

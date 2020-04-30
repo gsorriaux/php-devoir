@@ -19,6 +19,9 @@ footer{
     justify-content: center;
     align-items: center;
 }
+footer a:hover{
+    color: red;
+}
 main{
     display: flex;
     justify-content: center;
@@ -55,6 +58,10 @@ li{
 li:hover{
     background-color: blue;
 }
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 44px;
+}
 .accueil{
     display: flex;
     flex-direction: column;
@@ -69,14 +76,23 @@ li:hover{
     height: 300px;
 }
 .titre{
+    font-family: 'Dancing Script', cursive;
     text-align: center;
+    padding: 10px;
+    font-size: 40px;
 }
 .description{
     text-align: justify;
 }
+.listing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 table{
-    margin: 100px;
-    border-collapse: 10px;
+    border-collapse: collapse;
+    width: 90%
+
 }
 .description{
     width: 50%;
@@ -89,14 +105,28 @@ table{
 .infoProfil{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
 .nameProfil{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 20px;
 }
 .status{
     display: flex;
     justify-content: center;
+    width: 200px;
+}
+.status > p{
+    margin-right: 5px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    align-items: center;
 }
 .descriptionProfil{
     display: flex;
@@ -105,11 +135,46 @@ table{
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    height: 203px;
+    height: 200px;
+    width: 90%;
 }
 form{
     width: 400px;
     display: flex;
     flex-direction: column;
-
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 5px 1px black;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.info > img{
+    height: 300px;
+    margin-top: 20px;
+}
+.info p, .descriptionProfil p{
+    text-align: justify;
+    width: 70%;
+    margin-top: 20px;
+}
+.info table{
+    border-collapse: collapse;
+    margin: 20px;
+    text-align: center;
+}
+.info table, .info td{
+    border: 1px black solid;
+    width: 400px;
+    height: 44px;
+}
+.formLine{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
 }

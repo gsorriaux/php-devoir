@@ -2,7 +2,7 @@
 session_start();
 
 $log = [
-    "name" => "admin",
+    "name" => "johnny",
     "password" => "root"
 ];
 
