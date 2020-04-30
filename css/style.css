@@ -9,14 +9,12 @@ body{
     justify-content: space-between;
 }
 header{
-    height: 100px;
-    background-color: blue;
-    display: flex;
-    align-items: center;
+    background-image: linear-gradient(cornflowerblue, white);
+
 }
 footer{
-    height: 50px;
-    background-color: blue;
+    min-height: 50px;
+    background-image: linear-gradient(white, cornflowerblue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,16 +24,92 @@ main{
     justify-content: center;
 }
 nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
+    height: 100px;
 }
 ul{
     display: flex;
     list-style: none;
     justify-content: space-evenly;
+    width: 100%;
 }
 a{
     color: white;
+    text-decoration: none;
 }
 img{
     height: 100px;
+}
+li{
+    background-color: darkblue;
+    height: 44px;
+    min-width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+li:hover{
+    background-color: blue;
+}
+.accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+}
+.img{
+    text-align: center;
+}
+.img > img{
+    height: 300px;
+}
+.titre{
+    text-align: center;
+}
+.description{
+    text-align: justify;
+}
+table{
+    margin: 100px;
+    border-collapse: 10px;
+}
+.description{
+    width: 50%;
+}
+.profil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infoProfil{
+    display: flex;
+    flex-direction: column;
+}
+.nameProfil{
+    display: flex;
+    justify-content: center;
+}
+.status{
+    display: flex;
+    justify-content: center;
+}
+.descriptionProfil{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 203px;
+}
+form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+
 }

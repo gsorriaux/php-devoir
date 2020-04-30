@@ -12,16 +12,15 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="listing.php">listing</a></li>
+                <a href="/"><li>Accueil</li></a>
+                <a href="listing.php"><li>listing</li></a>
                 <?php if (!empty($_SESSION['name'])): ?>
-                    <li><a href="info.php">Info</a></li>
-                    <li><a href="profil.php">Profil</a></li>
-                    <li><a href="controllers/logout.php">Déconnexion</a></li>
+                    <a href="info.php"><li>Info</li></a>
+                    <a href="profil.php"><li>Profil</li></a>
+                    <a href="controllers/logout.php"><li>Déconnexion</li></a>
                 <?php else: ?>
-                    <li><a href="connexion.php">Connexion</a></li>
+                    <a href="connexion.php"><li>Connexion</li></a>
                 <?php endif ?>
             </ul>
         </nav>
     </header>
-    <?php var_dump($_SESSION) ?>

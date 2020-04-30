@@ -31,15 +31,23 @@ $lists = [
     <body>
         <?php require_once 'templates/header.php'; ?>
         <main>
-            <table>
-                <?php foreach ($lists as $value): ?>
-                    <tr>
-                        <td class="titre"><?= $value['titre']?></td>
-                        <td class="description"><?= $value['description']?></td>
-                        <td class="img"><img src="<?= $value['image']?>"></td>
-                    </tr>
-                <?php endforeach ?>
-            </table>
+            <div class="listing">
+                <table>
+                    <?php foreach ($lists as $key => $value): ?>
+                        <tr>
+                            <?php if($key % 2 == 0): ?>
+                                <td class="titre"><?= $value['titre']?></td>
+                                <td class="description"><?= $value['description']?></td>
+                                <td class="img"><img src="<?= $value['image']?>"></td>
+                            <?php else: ?>
+                                <td class="img"><img src="<?= $value['image']?>"></td>
+                                <td class="description"><?= $value['description']?></td>
+                                <td class="titre"><?= $value['titre']?></td>
+                            <?php endif ?>
+                        </tr>
+                    <?php endforeach ?>
+                </table>
+            </div>
         </main>
         <?php require_once 'templates/footer.html'; ?>
     </body>
