@@ -33,3 +33,4 @@ Ajout supplémentaire :
 - Garde en mémoire les préférences de l'utilisateur au niveau des boutons
 - La première lettre du nom de l'utilisateur est mise en majuscule
 - Ajout de ma signature dans le footer
+- Hashage du mot de passe en SHA1
